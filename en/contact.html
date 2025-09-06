@@ -3,79 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Alfahouse</title>
-    <meta name="description" content="Contact Alfahouse for a free quote or for any questions about our heating, air conditioning, and ventilation services.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Contact Alfahouse - Free Quote</title>
+    <meta name="description" content="Contact us for any questions or for a free quote. Find our address, phone, email, and opening hours.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
     <header>
-        <nav>
+        <div class="header-top-bar">
+            <div class="contact-info">
+                <span><i class="fa-solid fa-phone"></i> +32 485 62 26 61</span>
+                <span><i class="fa-solid fa-envelope"></i> info@alfahouse.be</span>
+                <span><i class="fa-solid fa-clock"></i> Mon-Fri: 8am-6pm</span>
+            </div>
+        </div>
+        <nav class="main-nav">
             <a href="index.html" class="logo">Alfahouse</a>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="realisations.html">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="language-switcher">
-                <a href="/fr/contact.html">FR</a>
+            <div class="lang-switcher">
+                <a href="../fr/contact.html">FR</a>
                 <a href="#" class="lang-active">EN</a>
-                <a href="/nl/contact.html">NL</a>
+                <a href="../nl/contact.html">NL</a>
             </div>
+            <button class="hamburger-menu" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
     </header>
 
     <main>
-        <section class="page-title">
+        <section class="page-header">
             <h1>Contact Us</h1>
+            <p>We are here to help with all your projects.</p>
         </section>
 
-        <section id="contact-page">
+        <section id="contact-page-content" class="content-section">
             <div class="contact-form-container">
-                <form action="#" method="POST">
+                <h2>Send us a message</h2>
+                <form action="mailto:info@alfahouse.be" method="post" enctype="text/plain">
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name">Your Name</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">Your Email</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
                     </div>
-                    <button type="submit" class="cta-button">Send</button>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
-            <div class="contact-details">
-                <h3>Our Contact Information</h3>
-                <p><strong>Alfahouse</strong></p>
-                <p>123 Example Street<br>1000 Brussels, Belgium</p>
-                <p><strong>Email:</strong> info@alfahouse.be</p>
-                <p><strong>Phone:</strong> +32 2 123 45 67</p>
+            <div class="contact-details-container">
+                <h2>Our Contact Information</h2>
+                <div class="contact-details">
+                    <p><strong><i class="fa-solid fa-location-dot"></i> Address:</strong><br>123 Fictional Street<br>1000 Brussels, Belgium</p>
+                    <p><strong><i class="fa-solid fa-phone"></i> Phone:</strong><br>+32 485 62 26 61</p>
+                    <p><strong><i class="fa-solid fa-envelope"></i> Email:</strong><br>info@alfahouse.be</p>
+                    <p><strong><i class="fa-solid fa-clock"></i> Opening Hours:</strong><br>Monday - Friday: 08:00 - 18:00<br>Saturday: 09:00 - 13:00<br>Sunday: Closed</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
-            <div class="contact-info">
+            <div class="footer-about">
                 <h4>Alfahouse</h4>
-                <p>123 Example Street, 1000 Brussels</p>
-                <p>Email: info@alfahouse.be</p>
-                <p>Tel: +32 2 123 45 67</p>
+                <p>Your trusted partner for optimal climate comfort at home and in the office.</p>
             </div>
-            <div class="quick-links">
+            <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="realisations.html">Projects</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Fictional Street, 1000 Brussels</p>
+                <p><i class="fa-solid fa-phone"></i> +32 485 62 26 61</p>
+                <p><i class="fa-solid fa-envelope"></i> info@alfahouse.be</p>
             </div>
         </div>
         <div class="copyright">
@@ -84,7 +108,7 @@
     </footer>
 
     <div id="whatsapp-fab" class="whatsapp-fab">
-        <!-- WhatsApp Icon -->
+        <i class="fa-brands fa-whatsapp"></i>
     </div>
 
     <script src="../js/main.js"></script>

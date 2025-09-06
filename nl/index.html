@@ -3,88 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfahouse - Verwarming, Airconditioning, Ventilatie</title>
-    <meta name="description" content="Alfahouse biedt deskundige diensten in verwarming, airconditioning en ventilatie. Oplossingen voor optimaal comfort thuis.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Alfahouse - Uw Partner in Klimaatcomfort</title>
+    <meta name="description" content="Alfahouse: Professionele oplossingen voor verwarming, airconditioning en ventilatie. Gratis offerte en deskundige service.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
     <header>
-        <nav>
+        <div class="header-top-bar">
+            <div class="contact-info">
+                <span><i class="fa-solid fa-phone"></i> +32 485 62 26 61</span>
+                <span><i class="fa-solid fa-envelope"></i> info@alfahouse.be</span>
+                <span><i class="fa-solid fa-clock"></i> Ma-Vr: 8u-18u</span>
+            </div>
+        </div>
+        <nav class="main-nav">
             <a href="index.html" class="logo">Alfahouse</a>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Diensten</a></li>
-                <li><a href="realisations.html">Realisaties</a></li>
+                <li><a href="over-ons.html">Over Ons</a></li>
+                <li><a href="diensten.html">Diensten</a></li>
+                <li><a href="projecten.html">Realisaties</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="language-switcher">
-                <a href="/fr/">FR</a>
-                <a href="/en/">EN</a>
+            <div class="lang-switcher">
+                <a href="../fr/">FR</a>
+                <a href="../en/">EN</a>
                 <a href="#" class="lang-active">NL</a>
             </div>
+            <button class="hamburger-menu" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
+        <section id="hero" style="background-image: url('../images/hero.jpg');">
             <div class="hero-content">
-                <h1>Uw Comfort, Onze Prioriteit</h1>
-                <p>Op maat gemaakte oplossingen voor verwarming, airconditioning en ventilatie.</p>
-                <a href="contact.html" class="cta-button">Vraag een gratis offerte aan</a>
+                <h1>Uw partner voor een totaal klimaatcomfort</h1>
+                <p>Oplossingen voor comfort en betrouwbaarheid</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Plan nu</a>
+                    <a href="contact.html" class="btn btn-secondary">Gratis offerte</a>
+                </div>
             </div>
         </section>
 
-        <section id="services">
-            <h2>Onze Diensten</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <div class="card-icon"><!-- Icon placeholder --></div>
-                    <h3>Verwarming</h3>
-                    <p>Installatie en onderhoud van efficiënte verwarmingssystemen.</p>
+        <section id="services-overview">
+            <div class="service-item">
+                <h3>Installatie</h3>
+                <p>Vertrouw op ons voor een vlekkeloze installatie van uw verwarmings- en airconditioningsystemen, uitgevoerd door gecertificeerde experts.</p>
+            </div>
+            <div class="service-item">
+                <h3>Reparatie</h3>
+                <p>Onze technici komen snel ter plaatse om elke storing te diagnosticeren en te repareren, zodat uw apparatuur goed functioneert.</p>
+            </div>
+            <div class="service-item">
+                <h3>Onderhoud</h3>
+                <p>Verzeker de levensduur en efficiëntie van uw installaties met onze op maat gemaakte preventieve onderhoudscontracten.</p>
+            </div>
+        </section>
+
+        <section id="why-choose-us">
+            <h2 class="section-title">Waarom Voor Ons Kiezen?</h2>
+            <div class="values-grid">
+                <div class="value-prop">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <h4>Deskundige Technici</h4>
+                    <p>Een gekwalificeerd team dat naar u luistert.</p>
                 </div>
-                <div class="card">
-                    <div class="card-icon"><!-- Icon placeholder --></div>
-                    <h3>Airconditioning</h3>
-                    <p>Airco-oplossingen voor een koele en aangename omgeving.</p>
+                <div class="value-prop">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <h4>Flexibele Planning</h4>
+                    <p>Wij passen ons aan uw agenda aan.</p>
                 </div>
-                <div class="card">
-                    <div class="card-icon"><!-- Icon placeholder --></div>
-                    <h3>Ventilatie</h3>
-                    <p>Ventilatiesystemen voor gezonde en gezuiverde lucht.</p>
+                <div class="value-prop">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h4>Transparante Prijzen</h4>
+                    <p>Geen verborgen kosten, een duidelijke offerte.</p>
                 </div>
+                <div class="value-prop">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h4>Betrouwbare Partners</h4>
+                    <p>Wij werken met de grootste merken in de sector.</p>
+                </div>
+                <div class="value-prop">
+                    <i class="fa-solid fa-headset"></i>
+                    <h4>Dienst Na Verkoop</h4>
+                    <p>Reactieve ondersteuning, ook na de installatie.</p>
+                </div>
+                <div class="value-prop">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <h4>Tevredenheidsgarantie</h4>
+                    <p>Uw comfort is ons grootste succes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2 class="section-title">Hoe Werkt Het?</h2>
+            <div class="steps-container">
+                <div class="step"><span>1</span> Offerte</div>
+                <div class="step-arrow">&rarr;</div>
+                <div class="step"><span>2</span> Akkoord</div>
+                <div class="step-arrow">&rarr;</div>
+                <div class="step"><span>3</span> Uitvoering</div>
+                <div class="step-arrow">&rarr;</div>
+                <div class="step"><span>4</span> Oplevering</div>
             </div>
         </section>
 
         <section id="projects">
-            <h2>Onze Realisaties</h2>
+            <h2 class="section-title">Onze Realisaties</h2>
             <div class="project-gallery">
-                <!-- Image placeholders -->
-                <div class="project-item"><img src="../images/project1_placeholder.jpg" alt="Verwarmingsinstallatie"></div>
-                <div class="project-item"><img src="../images/project2_placeholder.jpg" alt="Airconditioning unit"></div>
-                <div class="project-item"><img src="../images/project3_placeholder.jpg" alt="Ventilatiesysteem"></div>
-                <div class="project-item"><img src="../images/project4_placeholder.jpg" alt="Residentiële installatie"></div>
+                <div class="project-item">
+                    <img src="../images/project1.jpg" alt="HVAC-oplossing voor restaurant">
+                    <div class="project-info">
+                        <h5>Restaurant HVAC Oplossing</h5>
+                        <p>Brussel</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="../images/project2.jpg" alt="Installatie warmtepomp woning">
+                    <div class="project-info">
+                        <h5>Installatie Warmtepomp</h5>
+                        <p>Antwerpen</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="../images/project3.jpg" alt="Ventilatiesysteem kantoor">
+                    <div class="project-info">
+                        <h5>Kantoorventilatie</h5>
+                        <p>Gent</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2 class="section-title">Wat Onze Klanten Zeggen</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <blockquote>"Zeer professionele en snelle service. Het Alfahouse-team heeft ons huis getransformeerd. Ik beveel ze ten zeerste aan!"</blockquote>
+                    <cite>- Jan Peeters, Brussel</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>"De offerte was duidelijk en het werk vlekkeloos. Eindelijk een betrouwbaar bedrijf in de sector."</blockquote>
+                    <cite>- Annick De Smet, Luik</cite>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
-            <div class="contact-info">
+            <div class="footer-about">
                 <h4>Alfahouse</h4>
-                <p>Voorbeeldstraat 123, 1000 Brussel</p>
-                <p>Email: info@alfahouse.be</p>
-                <p>Tel: +32 2 123 45 67</p>
+                <p>Uw betrouwbare partner voor optimaal klimaatcomfort thuis en op kantoor.</p>
             </div>
-            <div class="quick-links">
+            <div class="footer-links">
                 <h4>Snelle Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Diensten</a></li>
-                    <li><a href="realisations.html">Realisaties</a></li>
+                    <li><a href="over-ons.html">Over Ons</a></li>
+                    <li><a href="diensten.html">Diensten</a></li>
+                    <li><a href="projecten.html">Realisaties</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacteer Ons</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Fictieve Straat 123, 1000 Brussel</p>
+                <p><i class="fa-solid fa-phone"></i> +32 485 62 26 61</p>
+                <p><i class="fa-solid fa-envelope"></i> info@alfahouse.be</p>
             </div>
         </div>
         <div class="copyright">
@@ -93,7 +185,7 @@
     </footer>
 
     <div id="whatsapp-fab" class="whatsapp-fab">
-        <!-- WhatsApp Icon -->
+        <i class="fa-brands fa-whatsapp"></i>
     </div>
 
     <script src="../js/main.js"></script>
