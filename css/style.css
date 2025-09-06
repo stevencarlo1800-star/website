@@ -1,0 +1,363 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 16px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 70px;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d47a1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Language Switcher */
+.language-switcher a {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.language-switcher .lang-active {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    background: url('../images/hero_background_placeholder.jpg') no-repeat center center/cover;
+    background-color: #0d47a1; /* Fallback color */
+    color: white;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #0d47a1;
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #0d47a1;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li a {
+    color: white;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #1e88e5;
+    padding-top: 20px;
+}
+
+/* WhatsApp FAB */
+.whatsapp-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Simple responsive solution: hide nav links */
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* WhatsApp Modal Styles */
+#whatsapp-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+#whatsapp-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    color: #0d47a1;
+}
+
+.modal-content a {
+    display: block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: #333;
+}
+
+.modal-content a:hover {
+    background-color: #e0e0e0;
+    text-decoration: none;
+}
+
+.modal-close-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Inner Page Styles */
+.page-title {
+    background-color: #0d47a1;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.page-title h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+#services-page, #contact-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.service-detail {
+    margin-bottom: 40px;
+}
+
+.service-detail h3 {
+    font-size: 1.8rem;
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+
+#contact-page {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-form-container {
+    flex: 2;
+}
+
+.contact-details {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#projects-page .project-item h3 {
+    margin-top: 10px;
+    color: #333;
+}
